@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Mono;
+    src: url('fonts/JetBrainsMono-VariableFont_wght.ttf') format("truetype-variations");
+    font-weight: 100 800;
+  }
+  
+.project-title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 4rem 0;
+    margin: 4rem 0 3rem;
+    color: var(--dark);
+    border-radius:6px;
+    position: relative;
+}
+.project-title img{
+    width: 50px;
+    position: absolute;
+    
+}
+#person-svg{
+    left: 25px;
+    top: 15px;
+}
+#line-svg{
+    right: 25px;
+    bottom: -30px;
+}
+#rocket-svg{
+    width: 70px;
+    top: -40px;
+    right: -31px;
+}
+#brain-svg{
+    left: 95px;
+    bottom: 0px;
+    
+}
+.project-video{
+    width: 100%;
+    border-radius: 16px;
+}
+.project-text, .project-video,.code pre{
+    margin: 1rem 0;
+}
+.code pre{
+    direction: ltr;
+    text-align: left;
+    
+    
+}
+pre code.hljs{
+    border-radius: 16px;
+   
+}
+pre code.hljs *{
+    
+    font-family: Mono;
+    font-weight: 600;
+}
+.hljs-copy-button{
+    top: 1.5rem!important;
+}
+.project-footer-btn{
+    padding: 1rem 2rem;
+}
+.project-footer-sec{
+    margin-bottom: 2rem;
+}

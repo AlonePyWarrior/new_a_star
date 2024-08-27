@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/styles3.css">
+        <link rel="stylesheet" href="style/project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+  rel="stylesheet"
+  href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
+/>
+<!-- <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'> -->
+        <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <title>تمرین پروژه اول فاز اول</title>
+    </head>
+</head>
+<body>
+    <section class="one-col-container project">
+        <h1 class="project-title txt-center bg-green shadow border-1">
+            <span>&#91;</span>
+            تمرین پروژه اول فاز سوم 
+            <span>&#93;</span>
+            <img src="images/triangle-pose-svgrepo-com.svg" id="person-svg" alt="">
+            <img src="images/tornado-svgrepo-com.svg" id="line-svg" alt="">
+            <img src="images/rocket-svgrepo-com.svg" id="rocket-svg" alt="">
+            <img src="images/brain-svgrepo-com.svg" id="brain-svg" alt="">
+
+        </h3>
+        <h2 class="section-title">
+            استفاده از الگوریتم های A* و G-BFS برای حل مساله جست و جوی هزار تو
+        </h2>
+        <p class="text">
+            "مهندسی پِرامت" یک اصطلاح متداول در زمینه پردازش طبیعی زبان (NLP) است. در NLP، ما از الگوریتم‌ها و مدل‌ها استفاده می‌کنیم تا به کامپیوترها کمک کنیم تا زبان انسان را درک و تولید کنند.
+مهندسی پرامت شامل طراحی دستورات یا سوالات خاص، به نام پرامت‌ها، است که رفتار مدل‌های NLP را هدایت می‌کنند. این پرامت‌ها به مدل کمک می‌کنند تا پاسخ‌هایی تولید کند که مرتبط و مفید هستند.
+به عنوان مثال، وقتی از مدل یک سوال می‌پرسیم یا به آن دستور می‌دهیم، شیوه صحیح صحبت کردن ما مانند یک پرامت است. یک پرامت مهندسی‌شده ی دقیق و واضح باعث می‌شود مدل آسان‌تر پاسخ‌های بهتری ارائه دهد.
+پس به طور خلاصه، مهندسی پرامت به معنای طراحی سوالات یا دستورات صحیح برای به دست آوردن بهترین نتایج است. این مانند ارائه یک نقشه راه واضح به مدل است تا وقتی در حال تولید پاسخ است، آن را دنبال کند.
+این یک مهارت مهم در دنیای NLP است و می‌تواند قابلیت ما در کار با فناوری‌های مبتنی بر زبان را به شدت ارتقا دهد.
+
+        </p>
+        <h2 class="section-title">
+            ویدیو توضیح prompt engineering
+        </h2>
+        <video src="videos/Media1.mp4" class="project-video" playsinline controls data-poster="images/images.jpg">
+            <source src="videos/Media1.mp4" type="video/mp4" />
+        </video>
+        <h2 class="section-title"> با استفاده از مهدنسی پرامت، این تصاویر را بسازید.</h2>
+        
+        <img src="images/prompt.jpg" alt="">
+        
+        
+    </section>
+
+        
+    <!-- <section class="one-col-container code">
+        <p class="code-text">عنوان کد</p>
+        <pre class="python">
+            <code class="language-python">
+print("JetBrains")
+print("Hello World!")
+for i in range(10):
+    print("i")
+            </code>
+        </pre>
+    </section> -->
+    <section class="one-col-container project-footer-sec">
+        
+        <button class="project-footer-btn green-btn" onclick="start_course()">بازگشت به درس</button>
+    </section>
+    <script>
+        
+        hljs.addPlugin(new CopyButtonPlugin());
+        hljs.highlightAll();    
+        // intro course js
+        function start_course() {
+            window.location.replace("home.html");
+        }
+    </script>
+</body>
+</html>

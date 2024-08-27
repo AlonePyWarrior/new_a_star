@@ -1,0 +1,92 @@
+/* maze styles */
+.maze{
+    display: grid;
+    /* border: 1px solid var(--dark); */
+    margin-bottom: 1rem;
+    box-shadow: -4px 3px 0 0 var(--dark);
+    width: 100%;   
+    overflow: hidden;
+}
+
+#mMaze3 .maze-block:hover{
+  cursor: pointer;
+}
+#mMaze3 .maze-block.wall:hover{
+  cursor: no-drop;
+}
+.maze-bg{
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.goal-find-text{
+  display: none;
+  font-size: 1rem;
+}
+.show{
+  display: block;
+  margin-bottom: 1rem;
+}
+.bg-pink{
+  background-color: var(--wp--preset--color--pale-pink);
+}
+@keyframes blink {
+  0%{
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale3d(2);
+  }
+  100% {
+    opacity: 1;
+  }
+  0%{
+    opacity: 0.8;
+  }
+}
+
+.blink{
+  animation: blink 1s infinite;
+}
+.maze-block{
+  background: var(--white-bg);
+  border: 2px solid black;
+  text-align: center;
+  padding: 0.8rem 0.2rem;
+  font-size: 0.6rem;
+  color: var(--white-bg);
+  font-weight: bold;
+ 
+  
+}
+.maze-solve-path-block{
+  background-color: var(--wp--preset--color--vivid-green-cyan);
+  color:var(--dark);
+}
+.manhatan-distanc-path{
+  background-color: var(--wp--preset--color--luminous-vivid-orange)!important;
+  color: var(--wp--preset--color--luminous-vivid-orange)!important;
+}
+.wall{
+  /* background-color: var(--dark);
+  color:var(--dark); */
+  background-color: #4d4d4d;
+  color:#4d4d4d;
+}
+.maze_start{
+  /* background-color: rgb(219, 74, 74); */
+  background-color: #FF4911;
+}
+.maze_end{
+  /* background-color: rgb(71, 219, 71); */
+  background-color: #E3A018;
+}
+.maze_start, .maze_end{
+  color:var(--dark);
+}
+
+.play-maze{
+  margin-bottom: 2rem;
+}

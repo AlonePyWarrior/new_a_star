@@ -1,0 +1,223 @@
+:root{
+    --width: 250px;
+    --ii: calc(-50% - 3px);
+}
+.breadcrumb{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    color: #505050;
+}
+
+.breadcrumb a{
+    color: #505050;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.breadcrumb a:hover{
+    color: var(--dark);
+}
+.course-details-page{
+    align-items: start;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 7rem;
+}
+.details-card{
+    width: 30%;
+}
+.details {
+    width: 100%;
+    gap: 4px;
+    height: 100%;
+    padding: 24px;
+    background-color: var(--wp--preset--color--luminous-vivid-amber);
+}
+.details img{
+    width: 30%;
+}
+.details .title{
+    font-size: 2rem;
+}
+.details .description{
+    font-size: 0.9rem;
+    color: #2c2c2c;
+}
+.details .faze-count-sec{
+    align-items: baseline;
+}
+.details .faze_count_val{
+    color: var(--dark);
+    font-weight: 700;
+}
+.faze-count-icon{
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid var(--dark);
+    box-shadow: 0px 1px 0 0 var(--dark);
+    position: relative;
+    margin-left: 8px;
+
+}
+.faze-count-icon-inner{
+    width: 7.5px;
+    height: 7.5px;
+    box-shadow: -1px 1px 0 1px var(--dark) inset;
+    border-radius: 2px;
+}
+.fazes{
+    min-width: 400px;
+    /* padding: 3rem; */
+}
+.shadow{
+    box-shadow: -3px 3px 0 2px var(--dark);
+}
+.inset{
+    box-shadow:-3px 3px 0 2px var(--dark) inset;
+}
+.faze-box{
+    padding: 2rem;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 150px;
+    border-radius: 12px;
+    display: block;
+    text-decoration: none;
+}
+a.faze-box:hover, a.faze-box:visited, a.faze-box:link{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+
+
+.inner-box{
+    
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    /* border-top-left-radius: 0; */
+    /* border-bottom-left-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+}
+.faze-box .block-img{
+    position: absolute;
+    top: 27px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%)!important;
+}
+.faze-box.active-faze .block-img{
+    display: none;
+}
+@keyframes robot_move {
+    0% {top: 35%;}
+    12.5% {top: 38%;}
+    25% {top: 40%}
+    37.5%{top: 45%;}
+    50%{top: 50%}
+    62.5%{top: 45%;}
+    75%{top: 40%}
+    87.5%{top: 38%;}
+    100%{top:35%}
+  }
+.robot-img{
+    /* position: absolute;
+    top: 10px;
+    left: 10px; */
+    width: 45px;
+    height: 45px;
+    animation-name: robot_move;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.faze-count{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 0;
+}
+.faze-box:nth-child(odd){
+    margin-top: 50px;
+}
+.faze-box:first-child{
+    margin-top: 0;
+
+}
+.faze-box:last-child::after{
+    display: none;
+
+}
+.faze-box:last-child::before{
+    display: none;
+
+}
+
+.faze-box:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    border-bottom: 2px dashed var(--dark);
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%); 
+}
+.faze-box:nth-child(odd)::after{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 1px;
+    border-right: 2px dashed #000;
+    top: 50%;
+    right: 350px;
+}
+.faze-box:nth-child(even){
+    right: 300px;
+    top: -50px;
+}
+.faze-box:nth-child(even):before{
+    content: '';
+    position: absolute;
+    width: var(--width);
+    height: 1px;
+    border-bottom: 2px dashed var(--dark);
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%); 
+}
+.faze-box:nth-child(even)::after{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 1px;
+    border-right: 2px dashed var(--dark);
+    top: 50%;
+    left: 350px;
+}
+
+.faze-title {
+    font-size: 0.7rem;
+    position: absolute;
+    top: 100%;
+    right:0;
+    padding-top: 1rem;
+    width: 100px;
+
+}
+.faze-title  h2{
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+.faze-title  h3{
+    font-size: 0.7rem;
+    font-weight: normal;
+
+}

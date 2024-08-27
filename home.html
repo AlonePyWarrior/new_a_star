@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فاز دوم دوره هوش مصنوعی آکادمی یاسان</title>
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="https://yasanacademy.ir/wp-content/uploads/2020/11/cropped-favio-8_58936acf31c52be13fe91cf786711d22_3-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://yasanacademy.ir/wp-content/uploads/2020/11/cropped-favio-8_58936acf31c52be13fe91cf786711d22_3-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://yasanacademy.ir/wp-content/uploads/2020/11/cropped-favio-8_58936acf31c52be13fe91cf786711d22_3-180x180.png" />
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsiveStyle.css">
+    <link rel="stylesheet" href="style/maze.css">
+    <link rel="stylesheet" href="style/leader-line.css">
+</head>
+
+<body>
+    <audio id="correct_audio_sound_effect" class="audio_sound_effect">
+        <source src="sounds/correct-6033.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="failed_audio_sound_effect" class="audio_sound_effect">
+        <source src="sounds/fail-144746.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <header>
+        <nav class="top-nav">
+            <div class="scroll-wrapper" id="scroll_wrapper">
+
+            </div>
+            <div class="current-active-part">
+                <p class="current-active-part-txt small">الگوریتم های بهینه جست و جو</p>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            <h2 class="section-title">مرور عملکرد BFSوDFS در مسائل جست و جو ‌</h2>
+            
+            <p class="text">
+                در فاز قبل با الگوریتم های BFS و DFS آشنا شدیم و مزیت ها و نقاط ضعف آنها را بررسی کردیم.
+                حتما به یاد دارید که BFS و DFS چه تفاوت هایی داشتند.
+            </p>
+            <p class="text">
+                اما آیا الگوریتم بهینه تری نسبت به DFS و BFS برای مسائل جست و جو در هوش مصنوعی وجود دارد؟
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section><!-- end of one-col-continer -->
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            
+            
+            <p class="text">
+                در فاز قبل دیدیم که الگوریتم های BFS و DFS هر دو توانستند با جست و جو در در فضای حالت مساله  Search حالت هدف را پیدا کنند.
+            </p>
+            <p class="text">
+                هزارتوی پایین را در نظر بگیرید در صورت اجرای الگوریتم BFS مسیر رسیدن به حالت هدف اینگونه خواهد بود.
+            </p>
+            <div class="maze-bg bg-yellow border-1 shadow" data-maze-id="bfsMaze1">
+                <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                <div class="maze" id="sec2_dfs_maze">
+
+                </div>
+                <div class="play-maz-box txt-center">
+                    <button class="yellow-btn play-maze">شروع جست و جو</button>
+                </div>
+            </div>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            
+            <p class="text">
+                این بار سعی میکنیم با استفاده از الگوریتم dfs مسیر رسیدن به هدف را پیدا کنیم
+            </p>
+            <div class="maze-bg bg-yellow border-1 shadow" data-maze-id="dfsMaze1">
+                <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                <div class="maze" id="sec3_bfs_maze">
+
+                </div>
+                <div class="play-maz-box txt-center">
+                    <button class="yellow-btn play-maze">شروع جست و جو</button>
+                </div>
+            </div>
+            
+           
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section>
+       
+        <div class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            <p class="text">
+                مشاهده کردید که اینبار چندان خوش شانس نبودیم و DFS مسیر طولانی تر را برای رسیدن به هدف انتخاب کرده است.
+            </p>
+            <p class="text">
+                بنابراین آیا BFS بهترین راه حل ممکن برای مسائل جست و جو است؟
+            </p>
+            <p class="text">
+                شاید بهتر باشد یک نمونه دیگر از مسائل جست و جو را بررسی کنیم.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </div>
+
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            
+            <p class="text">
+                در مسئله ای که هدف فاصله زیادی با حالت اولیه دارد، باید قدم های زیادی تا رسیدن به هدف برداریم.
+                هزارتوی زیر را در نظر بگیرید سعی میکنیم با استفاده از الگوریتم BFS حالت هدف را پیدا کنیم
+            </p>
+            
+            <div class="maze-bg bg-yellow border-1 shadow" data-maze-id="bfsMaze2">
+                <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                <div class="maze" id="sec4_bfs_maze">
+
+                </div>
+                <div class="play-maz-box txt-center">
+                    <button class="yellow-btn play-maze">شروع جست و جو</button>
+                </div>
+            </div>
+            
+           
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            
+            <p class="text">
+                همانطور که مشاهده می کنید الگوریتم BFS ، برای پیدا کردن هدف تمام راه های ممکن را جست و جو کرده است. 
+            </p>
+            <p class="text">
+                تا اینجا متوجه شدیم که الگوریتم های BFS وDFS لزوما در همه مسائل قادر به پیدا کردن هدف با صرف کمترین هزینه نیستند به عبارت دیگر این الگوریتم ها بهینه نیستند.
+            </p>
+            <p class="text">
+                اما آیا الگوریتمی وجود دارد که به صورت هوشمندانه تری مسیر رسیدن به هدف را جست و جو کند؟ 
+
+            </p>
+           
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            
+            <p class="text">
+                بگذارید به مرحله ای برگردیم که BFS میتوانست تصمیم متفاوتی بگیرد و  اینبار اینگونه به مسئله بنگریم که یک انسان برای رسیدن به هدف ممکن بود چطور عمل کند.
+            </p>
+           
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section>
+
+       
+        <section class="two-col-container course-part"data-section-title="مرور الگوریتم های BFS و DFS">
+            <div class="half-col right">
+                <p class="text">
+                    اولین جایگاهی که BFS باید تصمیم گیری میکرد در تصویر روبرو قابل مشاهده است.
+                </p>
+                <p class="text">
+                    مشاهده میشود که BFS ، 5 قدم را طی کرده (البته چاره دیگه ای هم نداشته!) و به یک دو راهی رسیده که میتوانسته به سمت چپ یا راست برود.
+                </p>
+                <p class="text">
+                    اما BFS به مسیر های نزدیک تر علاقه بیشتری دارد، پس یک قدم به چپ و یک قدم به راست حرکت میکند و این کار را آنقدر تکرار میکند تا به هدف برسد.
+                </p>
+                <p class="text">
+                    اما یک انسان چطور به این مسئله می نگرد؟
+                </p>
+                <p class="text">
+                    بهتر نیست در جهتی حرکتی کنیم که هدف در آن جهت قرار گرفته است؟
+                </p>
+                <p class="text">
+                    پس رفتن به سمت راست برای یک انسان، انتخاب معقول تری خواهد بود
+                </p>
+                <p class="text">
+                    همین ایده ساده به ما کمک خواهد کرد تا به الگوریتم های هوشمند تری برای مسائل جست و جو دست پیدا کنیم.
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn">قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                
+                <div class="maze-bg bg-yellow border-1 shadow" >
+                    <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                    <div class="maze" id="sec_example_bfs_maze" data-maze-id="bfsMaze3">
+    
+                    </div>
+                </div>
+                
+
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+
+        
+
+        <section class="one-col-container course-part" data-section-title="بازی">
+            <section class="quiz quiz-part">
+                    
+                <p class="question-text">
+                    بدون در نظر گرفتن هیچ الگوریتمی اگر در وضعیت پایین بخواهید بین دو خانه چپ و راست انتخاب کنید. کدام خانه را به عنوان حالت بعدی انتخاب میکنید؟
+                </p>
+                <div class="options body">
+                    <label class="q_option">خانه سمت راست
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="q_option">خانه سمت چپ
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="submit-answer">
+                    <button class="submit-quiz-btn">
+                        <span class="correct emoji_item">&#127881; </span>
+                        <span class="incorrect emoji_item">&#128584;</span>
+                        <span class="submit_btn_text"> ثبت پاسخ</span>
+                    </button>
+                    
+                    <button class="show-explanation-btn">نمایش پاسخ</button>
+                </div>
+            </section>
+            <section class="quiz quiz-answer">
+                <div class="quiz-answer-txt body">
+                    اگر به صورت شهودی به مساله نگاه کنیم این سوال را از خود میپرسیم که   بهتر نیست در جهتی حرکتی کنیم که هدف در آن جهت قرار گرفته است؟  پس رفتن به سمت راست برای یک انسان، انتخاب معقول تری خواهد بود  همین ایده ساده به ما کمک خواهد کرد تا به الگوریتم های هوشمند تری برای مسائل جست و جو دست پیدا کنیم. 
+                </div>
+                <div class="qe-submit-section">
+                    <button class="show_question return-to-question-btn">بازگشت به سوال</button>
+                </div>
+    
+            </section>
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            <h2 class="section-title">انواع الگوریتم های جست و جو</h2>
+            <p class="text">
+                به صورت کلی انواع الگوریتم های جست و جو در دو دسته کلی قرار میگیرند
+            </p>
+            <ul>
+                <li>
+                    <p class="text">
+                        الگوریتم های جستجوی ناآگاهانه (Uninformed Search Algorithms)
+                    </p>
+                </li>
+                <li>
+                    <p class="text">
+                        الگوریتم های جستجوی آگاهانه (Informed Search Algorithms)
+                    </p>
+                </li>
+            </ul>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            <h2 class="section-title">جست و جوی ناآگاهانه</h2>
+            <p class="text bold">
+                استراتژی جستجویی که از هیچ دانش خاصی در مورد مسئله استفاده نمی‌کند.
+            </p>
+            <p class="text">DFS و BFS از این دسته از الگوریتم ها هستند.</p>
+            <p class="text">
+                DFS و BFS به ساختار هزارتو برای رسیدن به راه حل، اهمیتی نمی دهند.
+            </p>
+            <p class="text">
+                این الگوریتم ها فقط به عمل (Action) های قابل انجام می نگرند و سپس انتخاب می کنند.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="جست و جوی آگاهانه">
+            <h2 class="section-title">جست و جوی آگاهانه</h2>
+            <p class="text">
+                اما وقت آن رسیده تا با یک الگوریتم بهبود یافته آشنا شویم.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            <h2 class="section-title">جست و جوی آگاهانه</h2>
+            <p class="text">
+                جست و جوی آگاهانه همانطور که از نامش پیداست استراتژی جستجویی است که از 
+                <span class="bold">دانش خاص در مورد مسئله </span>
+                استفاده می‌کند تا به صورت کارآمدتری راه‌حل‌ها را پیدا کند(در ادامه در رابطه با دانش خاص در مورد مسئله صحبت خواهیم کرد).
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="مرور الگوریتم های BFS و DFS">
+            
+            <p class="text">
+                در مساله جست و جوی هزارتو، میتوان اینگونه گفت که اگر در جایگاهی حضور داشته باشیم که از لحاظ مختصات جغرافیایی به هدف نزدیک تر است، بهتر از جایگاهی است که از لحاظ مختصات جغرافیایی از هدف دور تر است.
+            </p>
+            <p class="text">
+                در حالت پایین خانه سمت راست نسب به خانه سمت چپ انتخاب معقول تری به نظر می آید چراکه از لحاظ جغرافیایی فاصله کمتری با حالت هدف دارد
+            </p>
+            
+            <div class="maze-bg bg-yellow border-1 shadow" >
+                <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                <div class="maze" id="bfsMaze4" data-maze-id="bfsMaze4">
+
+                </div>
+                
+            </div>
+
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <h2 class="section-title">
+                BFS حریصانه (Greedy Best-First Search)
+            </h2>
+            <p class="text">
+                G BFS الگوریتم جستجو ی حریصانه ای است، که همیشه برای رفتن به حالت بعدی گرهی را انتخاب میکند که به هدف نزدیک تر است.
+            </p>
+            <p class="text">
+                و از یک تابع اکتشافی (Heuristic) بهره می برد(در قسمت بعد با جزییات در مورد ان صحبت خواهیم کرد).
+            </p>
+            <p class="text">
+                این الگوریتم که آن را معمولا G-BFS می نامند، یک الگوریتم جستجو است که بجای کاوش عمیق ترین گره (node) مانند DFS یا کم عمق ترین گره مانند BFS، تنها به دنبال گره ای می گردد که احتمال می دهد به هدف نزدیک تر است.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <h2 class="section-title">
+                تابع اکتشافی یا Huristic Function
+            </h2>
+            <p class="text">
+                تابع اکتشافی یک گره را به عنوان ورودی گرفته و میزان نزدیک بودن آن گره را به عنوان خروجی بر میگرداند
+            </p>
+            <p class="dir-ltr txt-center border-1 shadow formula bg-yellow">
+                <span class="formula-text">h(گره) = میزان نزدیک بودن گره به هدف</span>
+                <span class="label bg-green border-1 shadow">فرمول تابع اکتشافی</span>
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <p class="text">
+                مثال پایین را در نظر بگیرید
+            </p>
+            <div class="maze-bg bg-yellow border-1 shadow">
+                <div id="hMaze1" class="maze" data-maze-id="hMaze1">
+
+                </div>
+            </div>
+            <p class="text">
+                تابع هیوریستیک باید مشخص کند بین دو حالت آبی و قرمز ، کدامیک به هدف نزدیک تر است؟
+            </p>
+            <p class="text">
+                هر کسی ممکن است در نگاه اول بلافاصله تشخیص دهد که بلاک آبی رنگ گزینه بهتری است!
+            </p>
+            <p class="text">
+                اما تشخیص میزان نزدیک بودن به حالت هدف بر اساس چه معیاری انجام می شود؟
+
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <h2 class="section-title">
+                فاصله منهتن 
+            </h2>
+            <div class="maze-bg bg-yellow border-1 shadow" >
+                <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                <div class="maze" id="mMaze1" data-maze-id="mMaze1">
+
+                </div>
+                
+            </div>
+            <p class="text">
+                کافی است لحظه ای تصور کنیم که هیچ دیواری در هزارتو وجود ندارد، در اینصورت به راحتی متوجه میشویم که فاصله بلاک آبی رنگ تا هدف کمتر است.
+            </p>
+            <p class="text">
+                 این موضوع مقدمه ای است برای آشنایی با
+                <span class="bold"> فاصله منهتن.</span>
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <h2 class="section-title">
+                تعریف فاصله منهتن 
+            </h2>
+            <p class="text">
+                فاصله منهتن، در واقع تعداد قدم هایی است که فارغ از وجود هر مانعی باید برداریم تا به هدف برسیم.
+                به عبارت ساده تر فاصله منهتن بین دو نقطه برابر با فاصله افقی  به علاوه فاصله عمودی بین آن هاست.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <p class="text">
+                برای رفتن به حالت بعدی وضعیتی را انتخاب میکنیم که دارای کمترین مقدار  خروجی در تابع هیوریستیک است.
+                به عبارت دیگر وضعیتی را به عنوان حالت بعدی انتخاب میکنیم که کمترین فاصله منهتن را تا هدف دارد.
+            </p>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <p class="text">
+                اجازه بدهید این هزارتو را با اعدادی شماری گذاری کنیم که معرف مقدار تابع هیوریستیک (مقدار فاصله منهتن)، از هر کدام از این حالت(بلاک) ها تا حالت هدف (بلاک زرد رنگ ) است.
+                با کلیک بر روی هر کدام از خانه های هزارتو میتوانید نحوه محاسبه و مقدار فاصله منهتن خانه مورد نظر تا حالت هدف را مشاهده کنید
+            </p>
+            <!-- <div class="maze-bg bg-yellow border-1 shadow">
+                <div class="maze" id="mMaze2" data-maze-id="mMaze2">
+
+                </div>
+            </div> -->
+            <div class="maze-bg bg-yellow border-1 shadow">
+                <div class="maze" id="mMaze3" data-maze-id="mMaze3">
+
+                </div>
+            </div>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <section class="quiz quiz-part">
+                    <p class="question-text">
+                        در هزار توی روبرو فاصله منهتن نقطه آبی رنگ با حالت هدف چقدر است؟
+                    </p>
+                    <div class="options body">
+                        <label class="q_option">۱۰
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="q_option">۹
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="q_option">۸
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="q_option">۷
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="submit-answer">
+                        <button class="submit-quiz-btn">
+                            <span class="correct emoji_item">&#127881; </span>
+                            <span class="incorrect emoji_item">&#128584;</span>
+                            <span class="submit_btn_text"> ثبت پاسخ</span>
+                        </button>
+                        
+                        <button class="show-explanation-btn">نمایش پاسخ</button>
+                    </div>
+                </section>
+                <section class="quiz quiz-answer">
+                    <div class="quiz-answer-txt body">
+                        با توجه به توضیحات قسمت قبل فاصله منهتن نقطه آبی رنگ با حالت هدف برابر با ۸ است. بنابراین گزینه سوم صحیح میباشد.
+                    </div>
+                    <div class="qe-submit-section">
+                        <button class="show_question return-to-question-btn">بازگشت به سوال</button>
+                    </div>
+        
+                </section>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn">قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <div class="maze" id="qmMaze1" data-maze-id="qmMaze1">
+    
+                    </div>
+                </div>
+                
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    طبق تابع هیوریستک فاصله خانه  آبی رنگ تا هدف  فقط 2 قدم است، در حالیکه در واقعیت(با در نظر گرفتن موانع در هزارتو)  فاصله بسیار بیشتر از این مقدار است(حداقل 12 قدم که با رنگ سبز مشخص شده است). 
+                </p>
+                <p class="text">
+                    مشاهده میشود که تابع اکتشافی فاصله تقریبی نه لزوما دقیق یک حالت تا حالت هدف را برمیگرداند 
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <!-- <div class="maze-bg bg-yellow border-1 shadow">
+                    <div class="maze" id="mMaze3" data-maze-id="mMaze3">
+
+                    </div>
+                </div> -->
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <div class="maze" id="mMaze4" data-maze-id="mMaze4">
+    
+                    </div>
+                </div>
+                
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    حال سعی میکنیم با استفاده از G-BFS مسئله را حل میکنیم.
+                </p>
+                <p class="text">
+                    از نقطه آغازین (Initial State) شروع می کنیم و باید 5 قدم حرکت کنیم تا به وضعیتی برسیم که باید انتخاب کنیم(روی دکمه شروع جست و جو کلیک کنید)
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                    <div class="maze" id="G-BFSMaze1" data-maze-id="G-BFSMaze" >
+
+                    </div>
+                    <div class="play-maz-box txt-center">
+                        <button class="yellow-btn play-maze">شروع جست و جو</button>
+                    </div>
+                </div>
+                
+                
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+        
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <p class="text">
+                به این حالت Decision Point یا نقطه تصمیم گیری می گویند.
+                حالا باید انتخاب کنیم که قصد داریم به چپ یا راست برویم. 
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <div class="sh-quiz">
+                <p class="sh-question">
+                    با توجه به مقادیر تابع هیوریستیک در خانه های چپ و راست طبق الگوریتم G-BFS کدام حالت میبایست به عنوان حالت بعدی انتخاب شود؟
+                </p>
+                <div>
+                    <button class="short-quiz-btn">سمت راست</button>
+                    <button class="short-quiz-btn">سمت چپ</button>
+                </div>
+                <p class="sh-answer">
+
+                </p>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            
+            <p class="text">
+                مشاهده کردید که در این نقطه با توجه به دانشی که از مسئله داشتیم(فاصله تقریبی یک وضعیت تا حالت هدف همان فاصله منهتن یک حالت تا وضعیت هدف) توانستیم تصمیم آگاهانه تری برای انتخاب وضعیت بعدی بگیریم. 
+                </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    پس به مسیر خود تا رسیدن به نقطه تصمیم گیری بعدی ادامه میدهیم.
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <h3 class="goal-find-text bg-green border-1 shadow txt-center show">
+                        نقطه تصمیم گیری برای انتخاب بلاک بالا یا راست
+                    </h3>
+                    <div class="maze" id="G-BFSMaze2" data-maze-id="G-BFSMaze2">
+                        
+                    </div>
+                </div> 
+                
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+       
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    در این نقطه تصمیم گیری باید بین این دو سلول که هر کدام مقدار 7 را دارند انتخاب کنیم، در این حالت با توجه به الگوریتم میتوانیم بصورت دلخواه یکی از  مسیر را انتخاب کنیم.
+                </p>
+                <p class="text">
+                    مسیر بالا را انتخاب میکنیم.
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <h3 class="goal-find-text bg-green border-1 shadow txt-center show">
+                        نقطه تصمیم گیری برای انتخاب بلاک بالا یا راست
+                    </h3>
+                    <div class="maze" id="G-BFSMaze3" data-maze-id="G-BFSMaze3">
+                        
+                    </div>
+                </div>
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+        
+
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="formula text border-1 shadow explain" >
+                    <span id="gbfsExplainBox" class="formula-text">برای شروع جست و جو از دکمه های کنترلی در قسمت پایین هزار تو استفاده کنید</span>
+                    <span class="label bg-green border-1 shadow">توضیح قدم های جست و جو</span>
+                </p>
+                
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <div class="maze" id="G-BFSMaze4" data-maze-id="G-BFSMaze4">
+                        
+                    </div>
+                </div>
+                <div class="animated_btn_container">
+                    <button  id="explain_gbfs_maze_next" class="next_step green-btn">
+                        <svg fill="#000000"  width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" stroke="#ffffff" stroke-width="7.68" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="10.24"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g></svg>
+                    </button>
+                    <button  id="explain_gbfs_maze_prev" class="prev_step green-btn">
+                        <svg fill="#000000"  width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" stroke="#ffffff" stroke-width="7.68" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="10.24"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g></svg>
+                    </button>
+                </div>
+                
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            
+            <p class="text">
+                تا اینجا الگوریتم G-BFS بیشتر آشنا شدیم و آموختیم که چگونه مسیر  رسیدن به هدف پیدا میکند.
+                به این صورت که همیشه گرهی را به عنوان حالت بعدی  انتخاب میکنیم که دارای کمترین مقدار تابع هیوریستیک h(n) [احتمالی از فاصله گره تا مقصد ]باشد 
+            </p>
+            <p class="text">
+                بنابراین در این روش نسبت به DFS و BFS، وضعیت (state) های کمتری را برای رسیدن به مقصد باید جست و جو کنیم.
+            </p>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            
+            <p class="text">
+                اکنون که فهمیدیم G-BFS چگونه عمل می کند، شاید بهتر باشد بدنبال یک احتمال خوب باشیم یا بهتر بگوییم، یک هیوریستیک خوب!
+            </p>
+            <p class="text">
+                در واقع هر چه هیوریستیک بهتر عمل کند، الگوریتم G-BFS هم عملکرد بهتری خواهد داشت و با سرعت بیشتری حالت هدف را پیدا خواهد کرد.
+            </p>
+            <p class="text">
+                مجددا این سوال مطرح می شود که آیا این الگوریتم بهینه است؟ به عبارت دیگر همیشه بهترین راه حل ممکن را به دست خواهد آورد؟
+            </p>
+            <p class="text">
+                در مساله جست و جو سوال را میتوانیم اینگونه بپرسیم.
+                آیا همیشه کوتاه ترین مسیر از نقطه آغازین تا هدف را پیدا می کند؟
+            </p>
+            
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            
+            <p class="text">
+                اکنون که فهمیدیم G-BFS چگونه عمل می کند، شاید بهتر باشد بدنبال یک احتمال خوب باشیم یا بهتر بگوییم، یک هیوریستیک خوب!
+            </p>
+            <p class="text">
+                در واقع هر چه هیوریستیک بهتر عمل کند، الگوریتم G-BFS هم عملکرد بهتری خواهد داشت و با سرعت بیشتری حالت هدف را پیدا خواهد کرد.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+       
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    به مسئله روبرو دقت کنید.
+                </p>
+                <p class="text">
+                    در این مسئله میخواهیم از نقطه شروع به نقطه هدف برسیم و هر سلول با مقدار فاصله منهتن آن تا هدف، شماره گذاری شده است.
+                </p>
+                <p class="text">
+                    آیا G-BFS که همیشه وضعیتی که دارای کمترین فاصله منهتن تا هدف  است را به عنوان حالت بعدی انتخاب میکند، بهترین  مسیر برای رسیدن به حالت هدف از حالت مبدا را انتخاب خواهد کرد؟ 
+                </p>
+                <p class="text">امتحان کنید!</p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                    <div class="maze" id="G-BFSMaze5" data-maze-id="G-BFSMaze5">
+                        
+                    </div>
+                    <div class="play-maz-box txt-center">
+                        <button class="yellow-btn play-maze">شروع جست و جو</button>
+                    </div>
+                </div>      
+            </div>  
+            
+        </section><!-- end of two-col-container -->
+        
+
+        
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    الگوریتم G-BFS بعد از رسیدن به نقطه تصمیم گیری ، مسیر بالا را انتخاب کرد و نتیجه آن را در تصویر روبرو مشاهده میکنید.
+                </p>
+                
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                    <div class="maze" id="G-BFSMaze6" data-maze-id="G-BFSMaze6">
+                        
+                    </div>
+                </div>   
+
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+
+        <!-- <p class="true">
+                        حتما شما هم متوجه شدید که بهترین مسیر برای رسیدن به هدف، مسیری است که در تصویر روبرو می بینیم.
+                        مسیری که در نهایت قدم های کمتری برای رسیدن به هدف نیاز دارد
+                    </p>
+                    <p class="text">
+                        اگر به تصویر دقت کنید مشاهده میکنید که که مسیر بالا نسبت به مسیری که با استفاده از G-BFS به دست آمد کوتاه تر است و در نتیجه سریع تر ما را به حالت هدف میرساند.
+                    </p> -->
+                    <!-- <div class="goto_next-section">
+                        <button class="goto-next-btn"> قسمت بعدی</button>
+                    </div>
+                </p> -->
+        <!-- <section class="one-col-container course-part" data-section-title="G-BFS">
+            <div class="sh-quiz">
+                <p class="sh-question">
+                    آیا در مساله بالا G-BFS  نزدیک ترنی مسیر از حالت شروع تا هدف را پیدا کرد؟
+                </p>
+                <div>
+                    <button class="short-quiz-btn">بله</button>
+                    <button class="short-quiz-btn">خیر</button>
+                </div>
+
+                 
+                <p class="sh-answer">
+
+                </p>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <div class="goto_next-section">
+                <button class="goto-next-btn">قسمت بعدی</button>
+            </div>
+        </section> -->
+        
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    حتما شما هم متوجه شدید که بهترین مسیر برای رسیدن به هدف، مسیری است که در تصویر روبرو می بینیم.
+                </p>
+                <div class="text">
+                    مسیری که در نهایت قدم های کمتری برای رسیدن به هدف نیاز دارد، با وجود اینکه در نقطه ی تصمیم گیری که قبل تر به آن اشاره شد و با رنگ آبی در تصویر مشخص شده است، مقدار بیشتر (یعنی 13) را انتخاب کردیم. مقداری که با توجه به تابع هیوریستیک احتمال میدادیم انتخاب بدتری باشد.
+                </div>
+                <div class="text">
+                    این موضوع به خوبی بیان گر معنای G-BFS یا Greedy Best-First Search است، Greedy به معنای حریص است!
+                </div>
+                
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                    <div class="maze" id="G-BFSMaze7" data-maze-id="G-BFSMaze7">
+                        
+                    </div>
+                </div>  
+                    
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <div class="forum_box">
+                <h2 class="forum_title">
+                    چالش تالار <span>&#129488</span>
+                </h2>
+                <p class="text">
+                    آیا می توانید توضیح دهید چرا این نام را برای این الگوریتم انتخاب کرده اند؟
+                </p>
+            </div>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <p class="text">
+                ایده ی استفاده از تابع هیوریستیک به نظر جالب می رسد، اما از طرفی متوجه شدیم الگوریتم G-BFS نقاط ضعفی هم دارد و در بعضی مسائل ممکن است قادر به پیدا کردن مسیر بهینه نباشید.
+            </p>
+            <p class="text">
+                اما آیا الگوریتم بهینه تری هم وجود دارد؟!
+            </p>
+            <p class="text">
+                بهتر هست مجددا مسئله را بررسی کنیم تا ببینیم آیا میتوان به راه حل بهتری رسید یا خیر.
+            </p>
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="text">
+                    الگوریتم G-BFS بعد از رسیدن به نقطه تصمیم گیری (سلول نارنجی) ، مسیر بالا را انتخاب کرد و در نتیجه ی این انتخاب به سلول 12 (سلول آبی) رسید که نسبت به سلول بنفش مقدار کمتری دارد.
+                </p>
+                <p class="text">
+                    اما برای رسیدن به سلول آبی قدم های خیلی بیشتری را نسبت به حالتی پیمود که می توانست تنها با 6 قدم به سلول بنفش برسد، ولی ترجیح داد سلولی را انتخاب کند که مقدار هیوریستیک کمتری دارد.
+                </p>
+                <p class="text">
+                    آیا بهتر نبود سلولی را انتخاب می کرد که سریع تر او را به هدف برساند، حتی اگر مقدار هیوریستیک بیشتری داشته باشد؟
+                </p>
+                <p class="text">
+                    چگونه میتوان عملکرد این الگوریتم را ارتقا داد؟
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <p class="goal-find-text bold bg-green border-1 shadow txt-center"></p>
+                    <div class="maze" id="G-BFSMaze8" data-maze-id="G-BFSMaze8">
+                        
+                    </div>
+                </div>
+                    
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+        <section class="one-col-container course-part" data-section-title="G-BFS">
+            <h2 class="section-title">
+                الگوریتم جست و جوی *A
+            </h2>
+            <p class="text">
+                وقت آن رسیده تا با الگوریتم جدیدی آشنا شویم، الگوریتم جست و جوی A*(ای استار).
+            </p>
+            <p class="text">
+                الگوریتم جستجوی A* علاوه بر در نظر گرفتن تابع هیوریستیک، این موضوع را نیز در نظر میگیرد که چقدر طول می کشد تا وضعیت بعدی برسیم.
+            </p>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        <section class="one-col-container course-part" data-section-title="الگوریتم A*">
+            <h2 class="section-title">
+                تفاوت G-BFS و A* Search
+            </h2>
+            <p class="text">
+                در الگوریتم G-BFS تنها معیار برای انتخاب حالت بعدی فاصله ی تقریبی با هدف، یعنی همان مقدار هیوریستیک است.
+            </p>
+            <p class="text">
+                در عوض جستجوی ستاره ای دو نوع اطلاعات را مد نظر قرار می دهد:
+            </p>
+            <ul>
+                <li>
+                    <p class="text">
+                        فاصله یک حالت تا هدف بر اساس تابع هیوریستیک چه قدر است؟
+                    </p>
+                </li>
+                <li>
+                    <p class="text">تعداد گام های طی شده از حالت شروع تا حالت فعلی  چقدر است؟</p>
+                </li>
+                <li></li>
+            </ul>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="one-col-container course-part" data-section-title="الگوریتم A*">
+            <h2 class="section-title">
+                توضیح الگوریتم A*
+            </h2>
+            <p class="text">
+                الگوریتم جستجویی که گره با کمترین مقدار g(n) + h(n) را گسترش می‌دهد.
+            </p>
+            <p class="dir-ltr txt-center border-1 shadow formula bg-yellow mb-1">
+                <span class="formula-text">g(n) = هزینه رسیدن به حالت فعلی</span>
+                <span class="label bg-green border-1 shadow">g(n) فرمول تابع</span>
+            </p>
+            <br>
+            <p class="dir-ltr txt-center border-1 shadow formula bg-yellow mb-1">
+                <span class="formula-text">h(n) = هزینه رسیدن به هدف</span>
+                <span class="label bg-green border-1 shadow">h(n) فرمول تابع</span>
+            </p>
+            
+            <p class="text">
+                به بیان ساده تر، h(n) همان تابع هیوریستیکی است که قبل تر با آن آشنا شدیم.
+                g(n) هزینه رسیدن به گره است، به این معنا که چند قدم تا رسیدن هدف باید طی کرد.
+            </p>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+
+        <section class="two-col-container course-part" data-section-title="G-BFS">
+            <div class="half-col right">
+                <p class="formula text border-1 shadow  explain">
+                    <span id="AstarExplain" class="formula-text"> اینبار مسئله قبل را با استفاده از الگوریتم جست و جوی ستاره ای حل میکنیم.</span>
+                    <span class="label bg-yellow border-1 shadow">توضیح قدم های جست و جو</span>
+                </p>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn"> قسمت بعدی</button>
+                </div>
+            </div>
+            <div class="half-col left">
+                <div class="maze-bg bg-yellow border-1 shadow">
+                    <div class="maze" id="AStar1" data-maze-id="AStar1">
+                        
+                    </div>
+                </div>
+                <div class="animated_btn_container">
+                    <button  id="explain_gbfs_maze_next" class="next_step green-btn">
+                        <svg fill="#000000"  width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" stroke="#ffffff" stroke-width="7.68" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="10.24"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g></svg>
+                    </button>
+                    <button  id="explain_gbfs_maze_prev" class="prev_step green-btn">
+                        <svg fill="#000000"  width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" stroke="#ffffff" stroke-width="7.68" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="10.24"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M383.117,227.314L193.17,14.45C181.165,0.994,162.523-3.548,145.674,2.877c-16.848,6.424-27.734,22.227-27.734,40.258 v425.732c0,18.031,10.886,33.833,27.734,40.258c5.08,1.936,10.319,2.876,15.494,2.876c11.991,0,23.618-5.05,32.004-14.448 l189.946-212.866C397.709,268.333,397.709,243.668,383.117,227.314z M367.896,271.104L177.951,483.969 c-7.672,8.598-17.949,8.784-25.008,6.093c-7.059-2.692-14.603-9.674-14.603-21.196V43.135c0-11.523,7.544-18.504,14.603-21.196 c2.469-0.941,5.332-1.531,8.341-1.531c5.59,0,11.679,2.035,16.667,7.624l189.945,212.866 C375.58,249.507,375.58,262.495,367.896,271.104z"></path> </g> </g> <g> <g> <path d="M247.026,124.904l-4.669-5.232c-3.752-4.203-10.199-4.571-14.401-0.819c-4.203,3.752-4.57,10.199-0.819,14.401 l4.669,5.233c2.014,2.258,4.808,3.409,7.613,3.409c2.416,0,4.843-0.854,6.788-2.59 C250.41,135.553,250.776,129.106,247.026,124.904z"></path> </g> </g> <g> <g> <path d="M356.427,247.507L270.49,151.2c-3.75-4.201-10.199-4.571-14.401-0.819c-4.203,3.75-4.571,10.198-0.82,14.401 l85.937,96.307c2.015,2.258,4.808,3.409,7.614,3.409c2.416,0,4.843-0.853,6.788-2.59 C359.81,258.158,360.178,251.71,356.427,247.507z"></path> </g> </g> </g></svg>
+                    </button>
+                </div>
+                    
+            </div>  
+            
+        </section><!-- end of one-col first quiz -->
+
+        
+
+        <section class="one-col-container course-part" data-section-title="الگوریتم A*">
+            
+            <p class="text bold">
+                مشاهده کردید که هر تصمیمی که الگوریتم جست و جوی A* میگیرد بر اساس مجموع مقادیر:
+            </p>
+            <p class="text bold">
+                تعداد قدم هایی که برداشته شده تا به وضعیت فعلی برسم
+            </p>
+            <p class="text">
+                تعداد قدم هایی که باید برداشته شده تا از وضعیت فعلی به هدف برسم
+            </p>
+            <p class="text">
+                حتی با وجود قدم های اضافه که ای مجبور شدیم برداریم، راه حل نهایی نسبت به راه حل های قبلی بهبود قابل توجهی داشت.
+            </p>
+            
+            <div class="goto_next-section">
+                <button class="goto-next-btn"> قسمت بعدی</button>
+            </div>
+        </section>
+        
+        <section class="one-col-container course-part video" data-section-title="الگوریتم A*">
+            <div class="video-sec-container">
+                <video class="video-sec" id="plyer2" playsinline controls data-poster="images/A AStar Pathfinding .jpg">
+                    <source src="videos/A AStar Pathfinding Algorithm Visualization on a Real Map 720p.mp4" type="video/mp4" />
+                    
+                    <!-- <track kind="captions" label="زیرنویس" src="/path/to/captions.vtt" srclang="en" default /> -->
+                </video>
+                <div class="goto_next-section">
+                    <button class="goto-next-btn goto-next-video"> قسمت بعدی</button>
+                </div>
+            </div>
+            
+            <div class="img-overlay" data-img-overlay="images/A AStar Pathfinding .jpg">
+            </div>
+            <div class="qoute">
+                <p class="text">
+                    در ویدیو پایین به شکل بسیار جذابی نحوه عملکرد الگوریتم *A در پیدا کردن نزدیک ترین مسیر بین دو نقطه از شهر را میتوانید مشاده کنید(شهر های رم و شیکاگو)
+
+                </p>
+                <p class="qoute-text">
+                    <span class="qoute-mark">&#8217;</span>
+                    نحوه کارکرد الگوریتم جست و جوی *A
+                    <span class="qoute-mark">&#8216;</span>
+                </p>
+                
+                <button class="qoute-btn green-btn">نمایش ویدیو</button>
+            </div>
+
+        </section>
+        
+        
+        
+        <section class="course-part one-col-container finish-part">
+            <div class="finish-con">
+                <a class="finish-btn green-btn" href="finish.html">اتمام فاز</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/maze_Astarclass.js"></script>
+    <script src="scripts/img_overlay.js"></script>
+    <script src="scripts/leader-line.min.js"></script>
+
+    <script>
+       
+
+    </script>
+</body>
+
+</html>
